@@ -6,53 +6,46 @@ const UserSchema = new Schema(
   {
     firstName: {
       type: String,
-      required: [true, "field name is required"],
+      required: [true, "field name is required"]
     },
     lastName: {
       type: String,
-      required: [true, "field name is required"],
+      required: [true, "field name is required"]
     },
     address: {
       type: String,
-      required: [true, "address is required"],
+      required: [true, "address is required"]
     },
     phone1: {
       type: String,
-      required: [true, "phone is required"],
+      required: [true, "phone is required"]
     },
     phone2: {
-      type: String,
+      type: String
     },
     email: {
       type: String,
-      required: [true, "email is required"],
+      required: [true, "email is required"]
     },
     password: {
       type: String,
-      required: [true, "password is required"],
+      required: [true, "password is required"]
     },
 
     imgUrl: {
       type: String,
-      default: "/uploads/defaultImg.png",
+      default: "/uploads/defaultImg.png"
     },
-    // isActive: {
-    //   type: Boolean,
-    //   default: true,
-    // },
-    // isBlocked: {
-    //   type: Boolean,
-    //   default: false,
-    // },
+
     appointments: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Appointment",
-      },
-    ],
+        ref: "Appointment"
+      }
+    ]
   },
   {
-    timestamps: true,
+    timestamps: true
   }
 );
 

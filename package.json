@@ -4,15 +4,30 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "group 5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GloriaRaphael/RecycleIt.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GloriaRaphael/RecycleIt/issues"
+  },
+  "homepage": "https://github.com/GloriaRaphael/RecycleIt#readme",
   "dependencies": {
-    "bcrypt": "^3.0.7",
+    "admin-bro": "^1.6.6",
+    "admin-bro-expressjs": "^0.4.0",
+    "admin-bro-mongoose": "^0.4.0",
+    "bcrypt": "^3.0.6",
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.10",
     "morgan": "^1.9.1"

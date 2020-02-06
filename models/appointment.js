@@ -5,31 +5,27 @@ const AppointmentSchema = new Schema(
   {
     admin: {
       type: mongoose.Schema.Types.ObjectId,
-      required: [true, "admin's id is required"],
+      required: [true, "admin's id is required"]
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      required: [true, "user's id is required"],
+      required: [true, "user's id is required"]
     },
     date: {
       type: Date,
-      required: [true, "Date is required"],
+      required: [true, "Date is required"]
     },
 
-    phone: {
-      type: string,
-      required: [true, "phone is required"],
-    },
     status: {
       type: String,
       enum: ["pending", "approved", "accepted", "canceled"],
       default: "pending",
       lowercase: true,
-      trim: true,
-    },
+      trim: true
+    }
   },
   {
-    timestamps: true,
+    timestamps: true
   }
 );
 
